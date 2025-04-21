@@ -21,22 +21,22 @@ public class Main
         status = LoginForm.login("abc", "xyz");
         System.out.println("[Wrong username, wrong password] >> " + status);
         
-        status = LoginForm.login("ahsan", null);
+        status = LoginForm.login("SpandanDas", null);
         System.out.println("[Correct username, empty password] >> " + status);
         
-        status = LoginForm.login("ahsan", "xyz");
+        status = LoginForm.login("SpandanDas", "xyz");
         System.out.println("[Correct username, wrong password] >> " + status);
         
-        status = LoginForm.login(null, "ahsan_pass");
+        status = LoginForm.login(null, "spandan_pass");
         System.out.println("[Empty username, Correct password] >> " + status);
         
-        status = LoginForm.login("abc", "ahsan_pass");
+        status = LoginForm.login("abc", "spandan_pass");
         System.out.println("[Wrong username, Correct password] >> " + status);
         
         /*
          * Login success case, there is a validation code in errorMsg field.
          */
-        status = LoginForm.login("ahsan", "ahsan_pass");
+        status = LoginForm.login("SpandanDas", "spandan_pass");
         System.out.println("[Correct username, Correct password] >> " + status);
         
         if (status.isLoginSuccess()) {
