@@ -117,15 +117,15 @@ public class LoginServiceTest {
 
 		WebElement lNameElement = driver.findElement(By.id("lname"));
 		lNameElement.clear();
-		lNameElement.sendKeys("Doe");
+		lNameElement.sendKeys("Kohli");
 
 		WebElement emailElement = driver.findElement(By.id("email"));
 		emailElement.clear();
-		emailElement.sendKeys("virat.doe@example.com");
+		emailElement.sendKeys("virat.kohli@gmail.com");
 
 		WebElement dobElement = driver.findElement(By.id("dob"));
 		dobElement.clear();
-		dobElement.sendKeys("01-01-1990"); // Assuming a valid date
+		dobElement.sendKeys("05-11-1989"); // Assuming a valid date
 
 		WebElement submitButton = driver.findElement(By.cssSelector("[type=submit]"));
 		submitButton.click();
