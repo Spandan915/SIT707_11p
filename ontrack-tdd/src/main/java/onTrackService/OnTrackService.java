@@ -13,7 +13,7 @@ public class OnTrackService {
         public Task createTask(String title, String description, String creator) {
             Task task = new Task(taskIdCounter++, title, description, creator);
             tasks.put(task.getId(), task);
-            return task;
+            return task; // Trigger CI
         }
 
         public boolean addCollaborator(int taskId, String collaborator) {
