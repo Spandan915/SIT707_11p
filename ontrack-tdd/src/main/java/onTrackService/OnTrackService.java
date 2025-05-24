@@ -28,7 +28,7 @@ public class OnTrackService {
     public static class Task {
         private int id;
         private String title;
-        private String description;
+        private String description;// Trigger CI
         private String creator;
         private List<String> collaborators = new ArrayList<>();
 
