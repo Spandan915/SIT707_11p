@@ -18,12 +18,11 @@ public class OnTrackTests {
 	@BeforeEach
 	public void setup() {
 		taskService = new OnTrackService.TaskService();
-		tutoringService = new OnTrackService.TutoringService();
+		tutoringService = new OnTrackService.TutoringService(); // Trigger CI Build
 		studyGroupService = new OnTrackService.StudyGroupService();
 		progressReportService = new OnTrackService.ProgressReportService();
 		
 	}
-	
 	
 	@Test
 	public void testStudentIdentity() {
@@ -57,7 +56,7 @@ public class OnTrackTests {
 	    Task task = taskService.createTask("", "", "student1");
 	    assertNotNull(task);
 	    assertEquals("", task.getTitle());
-	    assertEquals("", task.getDescription()); //git Actions CI build
+	    assertEquals("", task.getDescription());
 	}
 	// Tutoring Sessions Test Cases
 		@Test

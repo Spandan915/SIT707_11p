@@ -8,7 +8,7 @@ public class OnTrackService {
     // Task Service
     public static class TaskService {
         private Map<Integer, Task> tasks = new HashMap<>();
-        private int taskIdCounter = 1;
+        private int taskIdCounter = 1; // Triger CI build
 
         public Task createTask(String title, String description, String creator) {
             Task task = new Task(taskIdCounter++, title, description, creator);
@@ -28,7 +28,7 @@ public class OnTrackService {
     public static class Task {
         private int id;
         private String title;
-        private String description; // git actions trigger
+        private String description;
         private String creator;
         private List<String> collaborators = new ArrayList<>();
 
@@ -212,7 +212,7 @@ public class OnTrackService {
     }
 
     public static class ProgressReport {
-        private String student;
+        private String student;// 
         private int averageScore;
         private int tasksCompleted;
 
