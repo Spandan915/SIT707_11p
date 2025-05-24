@@ -57,7 +57,7 @@ public class OnTrackTests {
 	    Task task = taskService.createTask("", "", "student1");
 	    assertNotNull(task);
 	    assertEquals("", task.getTitle());
-	    assertEquals("", task.getDescription());
+	    assertEquals("", task.getDescription()); //git Actions CI build
 	}
 	// Tutoring Sessions Test Cases
 		@Test
